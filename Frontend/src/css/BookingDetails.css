@@ -1,0 +1,135 @@
+.details-container {
+  margin: 20px;
+}
+
+.details-header {
+  font-size: 24px;
+  margin: 10px;
+  padding: 0px 0.6rem;
+  color: black;
+}
+
+.details-location {
+  margin: auto;
+  width: 100%;
+  display: flex;
+  padding: 0px 0.9rem;
+  align-items: center;
+}
+
+.details-information-container {
+  width: 98%;
+  margin: 1rem 1% 2rem 1%;
+  display: flex;
+  flex-wrap: wrap;
+  height: auto;
+  background-color: lightgray;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+.details-information {
+  display: flex;
+  flex-direction: column;
+}
+
+.booking-stay-information {
+  display: flex;
+  flex-direction: row;
+}
+
+.details {
+  display: flex;
+  margin-right: 0.5rem;
+  color: grey;
+  font-size: 13px;
+}
+
+.stay-icon {
+  font-size: 20px;
+  color: grey;
+}
+
+.details-total-price {
+  background-color: rgb(94, 14, 169);
+  color: rgb(255, 255, 255);
+  padding: 1rem;
+  border-radius: 12px;
+}
+
+.price-header {
+  margin: 0px;
+  padding: 0px;
+  font-size: 14px;
+}
+
+.price-in-number {
+  font-size: 24px;
+  margin: 0px;
+  padding: 0px;
+}
+
+.details-header-row {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.details-actions-row {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.details-cancel-btn {
+  padding: 0.8rem 1.1rem;
+}
+
+.booking-cancelled-at {
+  color: #d92d20;
+  font-size: 0.82rem;
+  margin-top: 0.5rem;
+}
+
+/* status badge - shared look with MyBookings.css, redeclared here
+   so this page renders correctly even on its own */
+.status-badge {
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  padding: 0.25rem 0.7rem;
+  border-radius: 1rem;
+  white-space: nowrap;
+}
+
+.status-badge-upcoming {
+  background: #eaf6ef;
+  color: #0e8b53;
+}
+
+.status-badge-past {
+  background: #eef1f5;
+  color: #51606b;
+}
+
+.status-badge-cancelled {
+  background: #fdecea;
+  color: #d92d20;
+}
+
+@media (max-width: 700px) {
+  .details-information-container {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .details-actions-row {
+    justify-content: space-between;
+    width: 100%;
+  }
+}
